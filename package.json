@@ -1,0 +1,20 @@
+{
+  "name": "express-forms-example",
+  "version": "1.0.0",
+  "description": "simple express.js forms",
+  "main": "app.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "express",
+    "forms"
+  ],
+  "author": "Guy Lyons",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0"
+  }
+}
