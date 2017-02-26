@@ -3,8 +3,29 @@
   <head>
     <meta charset="UTF-8"/>
     <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
-    {{{body}}}
+    <div class="container">
+      {{{body}}}
+    </div>
+    <footer>
+      <div class="container">
+        Page Created: {{createdOn}}
+        <hr/>
+        <h1>/test-form</h1>
+        <p>
+          The form below is tied to the route /test-form.
+          Submit some information to see this returned as JSON.
+        </p>
+        <form action="/test-form" method="POST">
+          <label for="name">Name</label>
+          <input name="name" type="text" value="name"/>
+          <label for="password">Password</label>
+          <input name="password" type="text" value="password"/>
+          <input name="submit" type="submit" value="submit"/>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
